@@ -42,11 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\PriorityStrategyContext.cs" />
+    <Compile Include="Entities\PriorityEnum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\IPriorityStrategy.cs" />
+    <Compile Include="Strategies\DefaultPriorityStrategy.cs" />
+    <Compile Include="Strategies\HighPriorityStrategy.cs" />
+    <Compile Include="Strategies\LowPriorityStrategy.cs" />
+    <Compile Include="Strategies\MediumPriorityStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

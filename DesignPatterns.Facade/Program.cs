@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Facade.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,14 @@ namespace DesignPatterns.Facade
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello! Give me a number and I will give you dogs of many legs...");
+            var numberFromCustomer = int.Parse(Console.ReadLine());
+
+            FacadeDogClass facadeDog = new FacadeDogClass();
+
+            facadeDog.DoItAll(numberFromCustomer);
+
+            Console.ReadLine();
         }
     }
 }

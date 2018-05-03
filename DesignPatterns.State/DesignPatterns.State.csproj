@@ -42,11 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Job.cs" />
+    <Compile Include="Interface\IJobState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="States\CheckInState.cs" />
+    <Compile Include="States\CheckOutState.cs" />
+    <Compile Include="States\CompletedState.cs" />
+    <Compile Include="States\InProgressState.cs" />
+    <Compile Include="States\OpenState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

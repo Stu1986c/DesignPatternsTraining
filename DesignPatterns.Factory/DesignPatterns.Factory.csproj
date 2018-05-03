@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BreakdownJob.cs" />
+    <Compile Include="Entities\InstallationJob.cs" />
+    <Compile Include="Entities\ServiceJob.cs" />
+    <Compile Include="Factories\JobFactory.cs" />
+    <Compile Include="Interfaces\IJob.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

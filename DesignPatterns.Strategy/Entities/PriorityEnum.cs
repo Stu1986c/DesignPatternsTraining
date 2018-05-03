@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Builder
+namespace DesignPatterns.Strategy.Entities
 {
-    public class Class1
+    public enum PriorityEnum
     {
+        High,
+        Medium,
+        Low
     }
 }
